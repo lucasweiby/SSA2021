@@ -1,0 +1,143 @@
+.footer {
+  background-color: #f6f6f6;
+  border-top: 6px solid $red;
+
+  &-map {
+    border-bottom: 1px solid $grey;
+    padding-bottom: 32px;
+
+    &-table {
+      table-layout: auto;
+      width: 100%;
+      color: $grey;
+
+      th,
+      td {
+        padding-right: 16px;
+        vertical-align: top;
+      }
+    }
+
+    &-list {
+      margin-top: 16px;
+      margin-bottom: 0;
+      list-style: none;
+      padding: 0;
+      font-size: 12px;
+      font-weight: 400;
+      color: $grey;
+
+      &-item {
+        &:not(:last-child) {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+
+  &-logo {
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid $grey;
+
+    &-img {
+      width: 60%;
+    }
+  }
+
+  &-info {
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid $grey;
+    flex-direction: column;
+    padding: 32px;
+
+    &-line {
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+
+      span {
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        @include bold;
+        margin-bottom: 6px;
+      }
+
+      a,
+      p {
+        font-weight: 400;
+        color: $grey;
+        font-size: 12px;
+        text-decoration: none;
+        margin-bottom: none;
+      }
+    }
+  }
+
+  &-contact {
+    padding: 32px 32px 32px 64px;
+    font-size: 20px;
+    color: $grey;
+    display: flex;
+    align-items: center;
+
+    &-list {
+      list-style: none;
+      padding: 0;
+
+      &-item {
+        font-weight: 600;
+
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
+
+        i {
+          color: $red;
+        }
+      }
+    }
+  }
+
+  &-social {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+
+    &-item {
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+
+      i {
+        color: $grey;
+      }
+    }
+  }
+
+  &-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-copy,
+  &-development {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: $light-grey;
+  }
+
+  &-development {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+
+    img {
+      margin-left: 16px;
+    }
+  }
+}

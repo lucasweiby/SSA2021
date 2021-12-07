@@ -1,0 +1,21 @@
+.form {
+  &-control {
+    border-radius: 32px;
+    background-color: #f8f8f8;
+    border: 1px solid #979797;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  &-submit {
+    color: #fff;
+    border: none;
+    width: 164px;
+    padding: 8px;
+    border-radius: 32px;
+    text-transform: uppercase;
+    @include bold;
+    font-size: 14px;
+  }
+}

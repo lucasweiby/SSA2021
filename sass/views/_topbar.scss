@@ -1,0 +1,25 @@
+.topbar {
+  border-top: 4px solid #c0051e;
+  border-bottom: 1px solid $grey;
+  box-sizing: border-box;
+
+  &-contact {
+    list-style: none;
+
+    &-item {
+      font-size: 14px;
+      font-weight: 500;
+      color: $grey;
+      height: 32px;
+
+      &:not(:first-child) {
+        border-left: 1px solid $grey;
+      }
+    }
+
+    &-social {
+      list-style: none;
+      margin: 0;
+    }
+  }
+}

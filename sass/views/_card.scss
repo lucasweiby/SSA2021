@@ -1,0 +1,248 @@
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba($color: $grey, $alpha: 0.2);
+  height: 380px;
+
+  &-img {
+    height: 156px;
+    width: 100%;
+    background-image: url("../assets/img/mg1.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+  }
+
+  &-badge {
+    display: initial;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 12px;
+    @include bold;
+  }
+
+  &-date {
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  &-content {
+    padding: 16px;
+    color: #fff;
+  }
+
+  &-title {
+    @include bold;
+  }
+
+  &-description {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 500;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+
+    i {
+      position: relative;
+      font-size: 14px;
+    }
+
+    &:hover {
+      color: #fff;
+
+      i {
+        animation-name: bounce-right;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+      }
+    }
+  }
+
+  @keyframes bounce-right {
+    0% {
+      left: 0;
+    }
+
+    100% {
+      left: 4px;
+    }
+  }
+}
+
+.card-event {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba($color: $grey, $alpha: 0.2);
+  height: 320px;
+  position: relative;
+  background-image: url("../assets/img/mg1.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba($color: #1e1e1e, $alpha: 0.3);
+  background-blend-mode: multiply;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &:hover {
+    background-size: 105%;
+  }
+
+  &-content {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+  }
+
+  .right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &::after {
+      content: " ";
+      width: 1px;
+      height: 100%;
+      background-color: $light-grey;
+      position: absolute;
+      left: -16px;
+      top: 0;
+    }
+  }
+
+  &-badge {
+    display: initial;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    font-size: 10px;
+    @include bold;
+  }
+
+  &-title {
+    @include bold;
+    margin-top: 4px;
+  }
+
+  &-description {
+    font-size: 12px;
+  }
+
+  &-date {
+    list-style: none;
+
+    li {
+      font-size: 12px;
+      @include bold;
+    }
+  }
+
+  &-place {
+    font-size: 12px;
+    @include bold;
+  }
+
+  &-button {
+    font-size: 12px;
+    @include bold;
+    padding: 4px 8px;
+    width: 100%;
+    margin-top: 4px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 32px;
+    color: #fff;
+  }
+
+  &-compact {
+    background-size: 100%, 100%;
+    background-image: url("../assets/img/mg2.png");
+
+    &:hover {
+      background-size: 105%, 105%;
+    }
+
+    .card-event-content {
+      bottom: 16px;
+    }
+  }
+}
+
+.card-tall {
+  height: 380px;
+}
+
+.card-horizontal {
+  box-shadow: none;
+  height: auto;
+  background-color: transparent;
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  .card-img {
+    height: 320px;
+    border-radius: 0;
+  }
+
+  .card-content {
+    color: $grey;
+    padding: 24px;
+  }
+
+  .card-title {
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .card-description {
+    line-height: 1.4;
+  }
+
+  .card-link {
+    color: $red;
+  }
+}
+
+.card-vertical {
+  box-shadow: none;
+  height: auto;
+  background-color: transparent;
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  .card-img {
+    height: 156px;
+    border-radius: 0;
+  }
+
+  .card-content {
+    color: $grey;
+    padding: 16px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  .card-description {
+    line-height: 1.4;
+  }
+
+  .card-link {
+    color: $red;
+  }
+}

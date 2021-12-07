@@ -1,0 +1,12 @@
+.newsletter {
+  &-subtitle {
+    font-weight: 600;
+    @include bold;
+  }
+
+  &-title {
+    @include bold;
+    font-size: 32px;
+    line-height: 1;
+  }
+}

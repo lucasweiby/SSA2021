@@ -1,0 +1,66 @@
+//Font
+@import url("../assets/fonts/Montserrat/stylesheet.css");
+@import "variables";
+
+//Utils
+@import "utils/colors";
+@import "utils/button";
+@import "utils/form";
+
+//Views
+@import "views/topbar";
+@import "views/navbar";
+@import "views/card";
+@import "views/blog";
+@import "views/newsletter";
+@import "views/footer";
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.title {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+
+  &::after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background-color: $lighter-grey;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &-text {
+    padding: 8px 0;
+    @include bold;
+    font-size: 28px;
+    position: relative;
+    width: auto;
+    display: flex;
+    align-items: center;
+
+    .underline {
+      height: 4px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1000;
+    }
+  }
+
+  &-button {
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    i {
+      font-size: 10px;
+    }
+  }
+}

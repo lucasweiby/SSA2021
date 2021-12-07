@@ -1,0 +1,35 @@
+.ssa-button {
+  text-decoration: none !important;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-weight: 600;
+  color: #fff;
+  padding: 8px 4px;
+  border-radius: 32px;
+  font-size: 14px;
+
+  &:hover {
+    color: #fff;
+    transition: all 0.1s ease-in-out;
+  }
+
+  &.red-bg {
+    &:hover {
+      background-color: #960014;
+    }
+  }
+
+  &.orange-bg {
+    &:hover {
+      background-color: #ca702a;
+    }
+  }
+
+  &.grey-bg {
+    &:hover {
+      background-color: #3b3b3b;
+    }
+  }
+}
