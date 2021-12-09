@@ -190,3 +190,64 @@
     }
   }
 }
+
+.headquarter {
+  background-color: #e6e7e9;
+
+  &-subtitle {
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &-title {
+    font-weight: 800;
+    font-family: $lato;
+    font-size: 32px;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.2;
+  }
+
+  &-content {
+    margin: 0 auto;
+    width: 60%;
+    font-family: $lato;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+.statute {
+  &-subtitle {
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &-title {
+    font-weight: 800;
+    font-family: $lato;
+    font-size: 32px;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.2;
+  }
+
+  &-content {
+    margin: 0 auto;
+    width: 60%;
+    font-family: $lato;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  &-logo {
+    height: 156px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
