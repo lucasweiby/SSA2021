@@ -32,4 +32,10 @@
       background-color: #3b3b3b;
     }
   }
+
+  &.yellow-bg {
+    &:hover {
+      background-color: #da9500;
+    }
+  }
 }

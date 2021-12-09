@@ -3,6 +3,7 @@
   border-radius: 8px;
   box-shadow: 0 0 8px rgba($color: $grey, $alpha: 0.2);
   height: 380px;
+  overflow: hidden;
 
   &-img {
     height: 156px;
@@ -63,6 +64,32 @@
         animation-duration: 0.5s;
         animation-iteration-count: infinite;
         animation-direction: alternate-reverse;
+      }
+    }
+  }
+
+  &-contact {
+    background-color: $light-grey;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    color: #fff;
+    font-family: $lato;
+
+    i {
+      margin-right: 8px;
+      font-size: 18px;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        color: $lighter-grey;
       }
     }
   }
@@ -244,5 +271,31 @@
 
   .card-link {
     color: $red;
+  }
+}
+
+.card-team {
+  background-color: $grey;
+
+  .card-img {
+    height: 256px;
+    background-position: center 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  &-job {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $lato;
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  &-name {
+    text-align: center;
+    font-family: $lato;
+    font-weight: 700;
+    font-size: 18px;
   }
 }

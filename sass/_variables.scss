@@ -1,3 +1,20 @@
+//Colors
+$grey: #4f4f4f;
+$red: #c0051e;
+$dark-red: #850f16;
+$orange: #f08330;
+$light-grey: #989898;
+$lighter-grey: #ebe8e8;
+$green: #489f59;
+$blue: #16489a;
+$light-blue: #00aeef;
+$grey-blue: #2e3542;
+$yellow: #f7ae0b;
+
+//Font
+$roboto: "Roboto", sans-serif;
+$lato: "Lato", sans-serif;
+
 @mixin bold {
   font-family: "Montserrat Bold", sans-serif;
 }

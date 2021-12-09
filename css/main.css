@@ -1,4 +1,6 @@
 @import url("../assets/fonts/Montserrat/stylesheet.css");
+@import url("../assets/fonts/Roboto/stylesheet.css");
+@import url("../assets/fonts/Lato/stylesheet.css");
 .red {
   color: #c0051e;
 }
@@ -112,6 +114,9 @@
 .ssa-button.grey-bg:hover {
   background-color: #3b3b3b;
 }
+.ssa-button.yellow-bg:hover {
+  background-color: #da9500;
+}
 
 .form-control {
   border-radius: 32px;
@@ -130,6 +135,28 @@
   text-transform: uppercase;
   font-family: "Montserrat Bold", sans-serif;
   font-size: 14px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0da";
+  color: #fff;
+  padding-right: 1rem;
+}
+.breadcrumb-item {
+  padding-right: 11px;
+}
+.breadcrumb-item a {
+  color: #ebe8e8;
+  text-decoration: none;
+}
+.breadcrumb-item.active {
+  color: #fff;
 }
 
 .topbar {
@@ -157,6 +184,9 @@
 .navbar-custom {
   border-bottom: 6px solid #c0051e;
 }
+.navbar-internal {
+  border-top: 6px solid #c0051e;
+}
 .navbar-navigation {
   list-style: none;
   margin: 0;
@@ -166,18 +196,30 @@
   color: #4f4f4f;
   width: auto;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 .navbar-item:not(:first-child) {
   border-left: 1px solid #4f4f4f;
 }
+.navbar-search {
+  background-color: transparent;
+  border: none;
+  color: #c0051e;
+  font-size: 18px;
+}
 
+@media (min-width: 1400px) {
+  .navbar-container {
+    max-width: 1510px;
+  }
+}
 .card {
   border: none;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(79, 79, 79, 0.2);
   height: 380px;
+  overflow: hidden;
 }
 .card-img {
   height: 156px;
@@ -231,6 +273,28 @@
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
+}
+.card-contact {
+  background-color: #989898;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+.card-contact i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+.card-contact a {
+  color: #fff;
+  text-decoration: none;
+}
+.card-contact a:hover {
+  color: #ebe8e8;
 }
 @keyframes bounce-right {
   0% {
@@ -384,6 +448,29 @@
   color: #c0051e;
 }
 
+.card-team {
+  background-color: #4f4f4f;
+}
+.card-team .card-img {
+  height: 256px;
+  background-position: center 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.card-team-job {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+.card-team-name {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
 .blog {
   background-color: #f6f6f6;
 }
@@ -422,11 +509,15 @@
   list-style: none;
   padding: 0;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   color: #4f4f4f;
 }
 .footer-map-list-item:not(:last-child) {
   margin-bottom: 4px;
+}
+.footer-map .sublist {
+  margin-top: 2px;
+  padding-left: 16px;
 }
 .footer-logo {
   display: flex;
@@ -510,6 +601,168 @@
 }
 .footer-development img {
   margin-left: 16px;
+}
+
+.header {
+  background-color: #c0051e;
+  position: relative;
+}
+.header-title {
+  text-align: center;
+  margin: 16px 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+.media {
+  position: relative;
+}
+.media::before {
+  content: "";
+  width: 100%;
+  height: 30%;
+  background-color: #c0051e;
+  position: absolute;
+  top: 0;
+}
+
+.content-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+}
+.content-text {
+  font-weight: 500;
+  font-size: 16px;
+}
+.content-text p {
+  font-family: "Lato", sans-serif;
+}
+
+.mvv {
+  background-image: url("../assets/img/mvv.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(94, 94, 94, 0.5);
+  background-blend-mode: hue;
+  padding: 64px 0;
+  font-family: "Lato", sans-serif;
+}
+.mvv-col:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+.mvv-img {
+  height: 48px;
+  margin-bottom: 12px;
+}
+.mvv-title {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  font-size: 24px;
+  margin: 8px auto;
+}
+.mvv-description {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  width: 80%;
+}
+
+.brand-subtitle {
+  font-weight: 600;
+  font-family: "Montserrat Bold", sans-serif;
+}
+.brand-title {
+  font-family: "Montserrat Bold", sans-serif;
+  font-size: 32px;
+  line-height: 1;
+}
+.brand-content {
+  font-size: 14px;
+  margin-top: 8px;
+  width: 80%;
+}
+
+.president {
+  background-color: #e6e7e9;
+}
+.president-quote {
+  font-size: 32px;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  color: #5e5e5e;
+  line-height: 1.2;
+}
+.president-quote::before {
+  content: '"';
+  font-size: 128px;
+  position: absolute;
+  top: -90px;
+  left: 0;
+  font-style: italic;
+  font-weight: 400;
+  color: #c0051e;
+}
+.president-quote-author {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  display: block;
+  margin-top: 16px;
+}
+.president-quote-job {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  display: block;
+}
+.president-title {
+  font-family: "Montserrat Bold", sans-serif;
+}
+.president-content p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.president-button {
+  color: #4f4f4f;
+  text-decoration: none;
+  border: 1px solid #4f4f4f;
+  padding: 8px 16px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.president-button:hover {
+  background-color: #4f4f4f;
+  color: #fff;
+}
+
+.team-subtitle {
+  font-family: "Montserrat Bold", sans-serif;
+}
+.team-title {
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+}
+.team-content {
+  width: 70%;
+  margin: 0 auto;
+}
+.team-content p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 
 * {

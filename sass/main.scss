@@ -1,11 +1,14 @@
 //Font
 @import url("../assets/fonts/Montserrat/stylesheet.css");
+@import url("../assets/fonts/Roboto/stylesheet.css");
+@import url("../assets/fonts/Lato/stylesheet.css");
 @import "variables";
 
 //Utils
 @import "utils/colors";
 @import "utils/button";
 @import "utils/form";
+@import "utils/breadcrumb";
 
 //Views
 @import "views/topbar";
@@ -14,6 +17,9 @@
 @import "views/blog";
 @import "views/newsletter";
 @import "views/footer";
+
+//Pages
+@import "pages/internal";
 
 * {
   font-family: "Montserrat", sans-serif;

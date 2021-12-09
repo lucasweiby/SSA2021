@@ -1,0 +1,192 @@
+.header {
+  background-color: $red;
+  position: relative;
+
+  &-title {
+    text-align: center;
+    margin: 16px 0;
+    font-family: $lato;
+    font-weight: 600;
+    color: #fff;
+  }
+}
+
+.media {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 30%;
+    background-color: $red;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.content {
+  &-title {
+    font-family: $lato;
+    font-weight: 800;
+  }
+
+  &-text {
+    font-weight: 500;
+    font-size: 16px;
+
+    p {
+      font-family: $lato;
+    }
+  }
+}
+
+.mvv {
+  background-image: url("../assets/img/mvv.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba($color: #5e5e5e, $alpha: 0.5);
+  background-blend-mode: hue;
+  padding: 64px 0;
+  font-family: $lato;
+
+  &-col {
+    &:not(:last-child) {
+      border-right: 1px solid #fff;
+    }
+  }
+
+  &-img {
+    height: 48px;
+    margin-bottom: 12px;
+  }
+
+  &-title {
+    color: #fff;
+    font-family: $lato;
+    font-weight: 800;
+    font-size: 24px;
+    margin: 8px auto;
+  }
+
+  &-description {
+    color: #fff;
+    font-family: $lato;
+    font-size: 14px;
+    width: 80%;
+  }
+}
+
+.brand {
+  &-subtitle {
+    font-weight: 600;
+    @include bold;
+  }
+
+  &-title {
+    @include bold;
+    font-size: 32px;
+    line-height: 1;
+  }
+
+  &-content {
+    font-size: 14px;
+    margin-top: 8px;
+    width: 80%;
+  }
+}
+
+.president {
+  background-color: #e6e7e9;
+
+  &-quote {
+    font-size: 32px;
+    font-family: $lato;
+    font-weight: 800;
+    color: #5e5e5e;
+    line-height: 1.2;
+
+    &::before {
+      content: '"';
+      font-size: 128px;
+      position: absolute;
+      top: -90px;
+      left: 0;
+      font-style: italic;
+      font-weight: 400;
+      color: $red;
+    }
+
+    &-author {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-family: $lato;
+      display: block;
+      margin-top: 16px;
+    }
+
+    &-job {
+      font-size: 12px;
+      font-weight: 500;
+      font-family: $lato;
+      font-style: italic;
+      display: block;
+    }
+  }
+
+  &-title {
+    @include bold;
+  }
+
+  &-content {
+    p {
+      font-family: $lato;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+
+  &-button {
+    color: $grey;
+    text-decoration: none;
+    border: 1px solid $grey;
+    padding: 8px 16px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: $grey;
+      color: #fff;
+    }
+  }
+}
+
+.team {
+  &-subtitle {
+    @include bold;
+  }
+
+  &-title {
+    font-family: $lato;
+    font-size: 32px;
+    font-weight: 800;
+  }
+
+  &-content {
+    width: 70%;
+    margin: 0 auto;
+
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+  }
+}
